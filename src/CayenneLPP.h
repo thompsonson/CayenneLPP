@@ -183,6 +183,7 @@ public:
 #endif
 #ifndef CAYENNE_DISABLE_GENERIC_SENSOR
   uint8_t addGenericSensor(uint8_t channel, float value);
+  uint8_t addGenericSensorU32(uint8_t channel, uint32_t value);   // exact 4-byte unsigned value, no float conversion
 #endif
 #ifndef CAYENNE_DISABLE_VOLTAGE
   uint8_t addVoltage(uint8_t channel, float value);

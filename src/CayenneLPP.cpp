@@ -667,6 +667,10 @@ uint8_t CayenneLPP::addAnalogOutput(uint8_t channel, float value) {
 uint8_t CayenneLPP::addGenericSensor(uint8_t channel, float value)  {
   return addField(LPP_GENERIC_SENSOR, channel, value);
 }
+
+uint8_t CayenneLPP::addGenericSensorU32(uint8_t channel, uint32_t value)  {
+  return addField(LPP_GENERIC_SENSOR, channel, value);
+}
 #endif
 
 #ifndef CAYENNE_DISABLE_LUMINOSITY
